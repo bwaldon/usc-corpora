@@ -1,2 +1,2 @@
-# usc-silver
-Silver constituency/dependency parses of the United States Code (and related experiments)
+# usc-corpora
+Corpora of US statutory text (and related analyses)
