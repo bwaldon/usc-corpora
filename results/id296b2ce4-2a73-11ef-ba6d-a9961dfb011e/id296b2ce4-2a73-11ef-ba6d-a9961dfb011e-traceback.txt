@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/folders/f3/n7fhwntd1_l2fcjc2pcmf4wm0000gn/T/ipykernel_3052/241785136.py", line 11, in <module>
+    parse = chapeau_parse(chapeau, nlp_tok, nlp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bw/Documents/chapeau_parse/chapeau_parse.py", line 15, in __init__
+    self.constparse, self.depparse, self.continuation_constparses, self.continuation_depparses, self.tok = self.get_chapeau_parse(chapeau, tokenizer, parser)
+                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bw/Documents/chapeau_parse/chapeau_parse.py", line 79, in get_chapeau_parse
+    list_tok = _get_tokens(string)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/bw/Documents/chapeau_parse/chapeau_parse.py", line 43, in _get_tokens
+    return " ".join([t.text for t in tokenizer(string).sentences[0].tokens])
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
